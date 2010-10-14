@@ -1,0 +1,40 @@
+#!/bin/sh
+
+set -x
+
+RUBY_MAJOR=1.9
+RUBY_VERSION=${RUBY_MAJOR}.2-p0
+RUBY_PACKAGE=ruby-${RUBY_VERSION}
+RUBY_FILE=${RUBY_PACKAGE}.tar.bz2
+RUBY_LOCATION=ftp://ftp.ruby-lang.org/pub/ruby/${RUBY_MAJOR}/${RUBY_FILE}
+
+mkdir -p $1 || exit "Error!"
+cd $1 || "Error!"
+
+RUBY_TARGET=$(pwd)
+
+export PATH=${RUBY_TARGET}/bin:$PATH
+
+clear_ruby() {
+	cd ${RUBY_TARGET}
+	rm -rf bin include lib share
+}
+
+install_ruby() {
+	clear_ruby
+
+	mkdir -p ${RUBY_TARGET}/src
+	cd ${RUBY_TARGET}/src
+
+	wget -c ${RUBY_LOCATION}
+	rm -rf ${RUBY_PACKAGE}
+	tar xf ${RUBY_FILE}
+	cd ${RUBY_PACKAGE}
+	./configure --prefix=$(cd ../..; pwd)
+	make -j$(grep ^pro /proc/cpuinfo | wc -l)
+	make -j$(grep ^pro /proc/cpuinfo | wc -l) install
+	cd ..
+	rm -rf ${RUBY_PACKAGE}
+}
+
+install_ruby
