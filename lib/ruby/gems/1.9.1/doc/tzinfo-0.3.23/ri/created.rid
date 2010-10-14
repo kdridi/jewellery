@@ -1,0 +1,25 @@
+Thu, 14 Oct 2010 14:58:02 +0200
+lib/tzinfo.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/linked_timezone_info.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/tzdataparser.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/timezone_info.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/country_index_definition.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/country.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/timezone_period.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/data_timezone_info.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/timezone.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/timezone_index_definition.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/data_timezone.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/linked_timezone.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/offset_rationals.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/ruby_core_support.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/info_timezone.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/country_info.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/timezone_offset_info.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/timezone_definition.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/time_or_datetime.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/timezone_proxy.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/timezone_transition_info.rb	Thu, 14 Oct 2010 14:57:54 +0200
+lib/tzinfo/country_timezone.rb	Thu, 14 Oct 2010 14:57:54 +0200
+README	Thu, 14 Oct 2010 14:57:54 +0200
+CHANGES	Thu, 14 Oct 2010 14:57:54 +0200
