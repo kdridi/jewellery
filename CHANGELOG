@@ -1,3 +1,21 @@
+2010.10.14 15:56 GMT: Initialize database
+	$> cd www
+	$> rake db:migrate
+
+2010.10.14 15:52 GMT: Initialize cucumber
+	$> cd www
+	$> rails generate cucumber:install
+
+2010.10.14 15:48 GMT: Add cucumber-rails v0.3.2 support
+	$> cd www
+	$> echo "gem 'cucumber-rails', '0.3.2'" >> Gemfile
+	$> bundle install
+
+2010.10.14 15:45 GMT: Add webrat v0.7.1 support
+	$> cd www
+	$> echo "gem 'webrat', '0.7.1'" >> Gemfile
+	$> bundle install
+
 2010.10.14 13:55 GMT: Add a default rails application
 	$> rails new www
 	$> cd www

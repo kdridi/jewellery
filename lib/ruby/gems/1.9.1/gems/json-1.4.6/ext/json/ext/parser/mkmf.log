@@ -1,0 +1,21 @@
+have_header: checking for re.h... -------------------- no
+
+"gcc -o conftest -I/tmp/jewellery/include/ruby-1.9.1/x86_64-linux -I/tmp/jewellery/include/ruby-1.9.1/ruby/backward -I/tmp/jewellery/include/ruby-1.9.1 -I.     -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -O3 -Wall conftest.c  -L. -L/tmp/jewellery/lib -Wl,-R/tmp/jewellery/lib -L.  -rdynamic -Wl,-export-dynamic     -Wl,-R -Wl,/tmp/jewellery/lib -L/tmp/jewellery/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"gcc -E -I/tmp/jewellery/include/ruby-1.9.1/x86_64-linux -I/tmp/jewellery/include/ruby-1.9.1/ruby/backward -I/tmp/jewellery/include/ruby-1.9.1 -I.     -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -O3 -Wall  conftest.c -o conftest.i"
+conftest.c:3:16: error: re.h: Aucun fichier ou dossier de ce type
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <re.h>
+/* end */
+
+--------------------
+
